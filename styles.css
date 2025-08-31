@@ -621,9 +621,11 @@ body {
 .inbox-content {
     text-align: center;
     z-index: 10;
-    position: relative;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 800px;
-    margin: 0 auto;
 }
 
 .inbox-heading {
@@ -705,28 +707,28 @@ body {
     background: linear-gradient(45deg, #43e97b, #38f9d7);
 }
 
-/* Card Positions */
+/* Card Positions - Around the pictures */
 .card-1 {
-    top: 15%;
-    left: 8%;
+    top: 25%;
+    left: 15%;
     animation-delay: -1s;
 }
 
 .card-2 {
-    top: 10%;
-    right: 10%;
+    top: 20%;
+    right: 15%;
     animation-delay: -3s;
 }
 
 .card-3 {
-    top: 20%;
-    right: 25%;
+    top: 55%;
+    right: 20%;
     animation-delay: -2s;
 }
 
 .card-4 {
-    top: 30%;
-    left: 5%;
+    top: 60%;
+    left: 20%;
     animation-delay: -4s;
 }
 
@@ -734,7 +736,7 @@ body {
 /* Central Profile Pictures */
 .profile-pics {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 8;
