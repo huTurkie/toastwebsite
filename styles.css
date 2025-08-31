@@ -100,15 +100,13 @@ body {
 
 /* Sections Container */
 .sections-container {
-    display: flex;
-    width: 200vw; /* Will expand as more sections are added */
-    height: 100vh;
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    width: 100vw;
+    min-height: 100vh;
 }
 
 .section {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
