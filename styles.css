@@ -101,7 +101,6 @@ body {
 /* Sections Container */
 .sections-container {
     width: 100vw;
-    min-height: 100vh;
 }
 
 .section {
