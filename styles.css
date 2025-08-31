@@ -930,6 +930,13 @@ body {
     font-weight: 700;
     margin: 0;
     text-transform: lowercase;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.title-line {
+    display: block;
 }
 
 .left-heading .side-title {
