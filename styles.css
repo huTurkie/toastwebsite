@@ -1035,12 +1035,12 @@ body {
 /* Right side bubble positions */
 .bubble-r1 {
     top: 25%;
-    right: 12%;
+    right: 18%;
     animation-delay: -2s;
 }
 
 .bubble-r2 {
-    bottom: 35%;
+    bottom: 25%;
     right: 12%;
     animation-delay: -4s;
 }
