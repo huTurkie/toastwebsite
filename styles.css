@@ -544,6 +544,12 @@ body {
     animation-delay: -4s;
 }
 
+.bubble-5 {
+    bottom: 25%;
+    left: 12%;
+    animation-delay: -5s;
+}
+
 /* Section 2 Floating Elements */
 .section2-floating {
     position: absolute;
