@@ -707,29 +707,40 @@ body {
     background: linear-gradient(45deg, #43e97b, #38f9d7);
 }
 
-/* Card Positions - Around the pictures */
+.transform {
+    background: linear-gradient(45deg, #fa709a, #fee140);
+}
+
+/* Card Positions - Perfect circle around the pictures */
 .card-1 {
     top: 15%;
-    left: 15%;
+    left: 8%;
     animation-delay: -1s;
 }
 
 .card-2 {
-    top: 10%;
-    right: 15%;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
     animation-delay: -3s;
 }
 
 .card-3 {
-    top: 35%;
-    right: 20%;
+    top: 15%;
+    right: 8%;
     animation-delay: -2s;
 }
 
 .card-4 {
-    top: 40%;
-    left: 20%;
+    top: 50%;
+    left: 8%;
     animation-delay: -4s;
+}
+
+.card-5 {
+    top: 50%;
+    right: 8%;
+    animation-delay: -5s;
 }
 
 
