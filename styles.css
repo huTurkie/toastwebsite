@@ -521,33 +521,27 @@ body {
 }
 
 .bubble-1 {
-    top: 15%;
+    top: 60%;
     left: 8%;
     animation-delay: -1s;
 }
 
 .bubble-2 {
-    top: 25%;
+    top: 70%;
     left: 5%;
     animation-delay: -3s;
 }
 
 .bubble-3 {
-    top: 20%;
+    top: 65%;
     right: 8%;
     animation-delay: -2s;
 }
 
 .bubble-4 {
-    top: 35%;
+    top: 75%;
     right: 5%;
     animation-delay: -4s;
-}
-
-.bubble-5 {
-    bottom: 25%;
-    left: 12%;
-    animation-delay: -5s;
 }
 
 /* Section 2 Floating Elements */
