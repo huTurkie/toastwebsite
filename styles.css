@@ -910,18 +910,18 @@ body {
 .friends-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
     position: relative;
     z-index: 10;
+    gap: 2rem;
 }
 
 .left-heading,
 .right-heading {
-    flex: 1;
     text-align: center;
 }
 
@@ -933,15 +933,14 @@ body {
 }
 
 .left-heading .side-title {
-    color: #ff4081;
+    color: white;
 }
 
 .right-heading .side-title {
-    color: #4facfe;
+    color: white;
 }
 
 .central-content {
-    flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
