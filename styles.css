@@ -709,25 +709,25 @@ body {
 
 /* Card Positions - Around the pictures */
 .card-1 {
-    top: 20%;
+    top: 15%;
     left: 15%;
     animation-delay: -1s;
 }
 
 .card-2 {
-    top: 15%;
+    top: 10%;
     right: 15%;
     animation-delay: -3s;
 }
 
 .card-3 {
-    top: 45%;
+    top: 35%;
     right: 20%;
     animation-delay: -2s;
 }
 
 .card-4 {
-    top: 50%;
+    top: 40%;
     left: 20%;
     animation-delay: -4s;
 }
