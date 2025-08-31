@@ -212,8 +212,8 @@ body {
 
 /* Hand Wave */
 .hand-wave {
-    top: 20%;
-    left: 15%;
+    top: 15%;
+    left: 25%;
     font-size: 4rem;
     animation: wave 2s ease-in-out infinite;
 }
@@ -225,39 +225,40 @@ body {
 
 /* Photo Frames */
 .photo-frame {
-    width: 120px;
-    height: 160px;
+    width: 140px;
+    height: 180px;
     background: white;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(-10deg);
+    padding: 8px;
+    overflow: hidden;
 }
 
 .frame-1 {
-    top: 15%;
-    right: 20%;
+    top: 25%;
+    left: 8%;
+    transform: rotate(-10deg);
     animation-delay: -1s;
 }
 
 .frame-2 {
-    bottom: 25%;
-    right: 15%;
+    top: 20%;
+    right: 8%;
     transform: rotate(15deg);
     animation-delay: -3s;
 }
 
-.photo-placeholder {
-    color: #ff4081;
-    font-size: 3rem;
+.photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 /* Bubble Tea */
 .bubble-tea {
-    bottom: 30%;
-    left: 10%;
+    bottom: 15%;
+    left: 8%;
     animation-delay: -2s;
 }
 
@@ -318,8 +319,8 @@ body {
 
 /* Balloon */
 .balloon {
-    top: 25%;
-    right: 30%;
+    top: 8%;
+    right: 25%;
     animation-delay: -4s;
 }
 
@@ -357,8 +358,8 @@ body {
 
 /* Decorative Shapes */
 .shape-circle {
-    top: 40%;
-    left: 25%;
+    bottom: 20%;
+    right: 12%;
     width: 40px;
     height: 40px;
     background: rgba(255, 255, 255, 0.3);
@@ -367,8 +368,8 @@ body {
 }
 
 .shape-star {
-    top: 60%;
-    right: 40%;
+    top: 8%;
+    right: 5%;
     color: #ffeb3b;
     font-size: 2rem;
     animation-delay: -1.5s;
