@@ -711,7 +711,7 @@ body {
     background: linear-gradient(45deg, #fa709a, #fee140);
 }
 
-/* Card Positions - Perfect circle around the pictures */
+/* Card Positions - Tighter circle around the pictures */
 .card-1 {
     top: 15%;
     left: 8%;
@@ -720,26 +720,26 @@ body {
 
 .card-2 {
     top: 8%;
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
     animation-delay: -3s;
 }
 
 .card-3 {
     top: 15%;
-    right: 8%;
+    right: 15%;
     animation-delay: -2s;
 }
 
 .card-4 {
     top: 50%;
-    left: 8%;
+    left: 15%;
     animation-delay: -4s;
 }
 
 .card-5 {
     top: 50%;
-    right: 8%;
+    right: 15%;
     animation-delay: -5s;
 }
 
