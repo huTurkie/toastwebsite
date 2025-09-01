@@ -96,11 +96,11 @@
         }
 
         .rotating-suggestions {
-            margin-top: 10px;
+            margin: 5px 0;
             font-size: 0.9rem;
             color: rgba(255, 255, 255, 0.8);
             text-align: center;
-            min-height: 24px;
+            min-height: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -142,7 +142,7 @@
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 5px;
             transition: all 0.3s ease;
         }
 
@@ -259,15 +259,14 @@
                     placeholder="Enter your roast or transformation prompt here..."
                     rows="4"
                 ></textarea>
+                <div class="rotating-suggestions" id="suggestions">
+                    Put them in another country / city 🌍
+                </div>
                 <button class="submit-btn">
                     Send
                 </button>
             </div>
             
-        </div>
-
-        <div class="rotating-suggestions" id="suggestions">
-            Put them in another country / city 🌍
         </div>
 
         <div class="stats-text">
