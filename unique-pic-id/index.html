@@ -95,15 +95,18 @@
             display: block;
         }
 
+        .input-container {
+            position: relative;
+        }
+
         .rotating-suggestions {
-            margin-top: 10px;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            right: 20px;
             font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.8);
-            text-align: center;
-            min-height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            color: #999;
+            pointer-events: none;
             transition: opacity 0.3s ease;
         }
 
@@ -254,18 +257,21 @@
             </div>
 
             <div class="input-section">
-                <textarea 
-                    class="prompt-input" 
-                    placeholder="Enter your roast or transformation prompt here..."
-                    rows="4"
-                ></textarea>
+                <div class="input-container">
+                    <textarea 
+                        class="prompt-input" 
+                        placeholder="Enter your roast or transformation prompt here..."
+                        rows="4"
+                    ></textarea>
+                    <div class="rotating-suggestions" id="suggestions">
+                        Put them in another country / city 🌍
+                    </div>
+                </div>
                 <button class="submit-btn">
                     Send
                 </button>
             </div>
             
-            <div class="rotating-suggestions" id="suggestions">
-                Put them in another country / city 🌍
             </div>
         </div>
 
@@ -274,7 +280,7 @@
         </div>
 
         <button class="get-messages-btn">
-            Get your own toasts!
+            Get your own roasts!
         </button>
 
         <div class="footer-links">
