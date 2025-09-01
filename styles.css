@@ -1217,7 +1217,7 @@ body {
 /* Join Download Buttons */
 .join-download-buttons {
     position: absolute;
-    bottom: 8%;
+    top: 65%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 15;
