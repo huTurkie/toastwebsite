@@ -170,11 +170,22 @@
             cursor: pointer;
             transition: all 0.3s ease;
             width: 100%;
+            animation: moveButton 2s ease-in-out infinite;
+        }
+
+        @keyframes moveButton {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
         }
 
         .get-messages-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            animation-play-state: paused;
         }
 
         .footer-links {
@@ -438,7 +449,7 @@
         </div>
 
         <div class="stats-text">
-            🔥 <span id="counter">274</span> friends just tapped the button 🔥
+            🔥 <span id="counter">274</span> friends just tapped the button 👇
         </div>
 
         <button class="get-messages-btn">
