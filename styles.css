@@ -610,43 +610,43 @@ body {
 
 .bubble-1 {
     top: 25%;
-    left: 15%;
+    left: 25%;
     animation-delay: -1s;
 }
 
 .bubble-2 {
     top: 15%;
-    left: 35%;
+    left: 40%;
     animation-delay: -3s;
 }
 
 .bubble-3 {
     top: 20%;
-    right: 15%;
+    right: 25%;
     animation-delay: -2s;
 }
 
 .bubble-4 {
     top: 40%;
-    right: 8%;
+    right: 18%;
     animation-delay: -4s;
 }
 
 .bubble-5 {
-    bottom: 30%;
-    right: 20%;
+    bottom: 25%;
+    right: 30%;
     animation-delay: -5s;
 }
 
 .bubble-6 {
-    bottom: 20%;
-    left: 25%;
+    bottom: 15%;
+    left: 35%;
     animation-delay: -6s;
 }
 
 .bubble-7 {
     top: 45%;
-    left: 8%;
+    left: 18%;
     animation-delay: -7s;
 }
 
