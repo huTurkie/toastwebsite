@@ -122,7 +122,7 @@
 
         .submit-btn {
             width: 100%;
-            background: linear-gradient(135deg, #ff4081 0%, #ff6b35 100%);
+            background: #000;
             color: white;
             border: none;
             padding: 15px 20px;
@@ -136,7 +136,7 @@
 
         .submit-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(255, 64, 129, 0.3);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
         .stats-text {
@@ -178,15 +178,14 @@
             opacity: 0.8;
         }
 
-        .back-btn {
+        .logo-btn {
             position: absolute;
             top: 20px;
             left: 20px;
             background: rgba(255, 255, 255, 0.2);
             border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
+            border-radius: 15px;
+            padding: 8px 15px;
             color: white;
             cursor: pointer;
             display: flex;
@@ -194,9 +193,11 @@
             justify-content: center;
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
+            font-size: 1.2rem;
+            font-weight: 700;
         }
 
-        .back-btn:hover {
+        .logo-btn:hover {
             background: rgba(255, 255, 255, 0.3);
             transform: translateY(-2px);
         }
@@ -213,8 +214,8 @@
     </style>
 </head>
 <body>
-    <button class="back-btn" onclick="window.history.back()">
-        <i class="fas fa-arrow-left"></i>
+    <button class="logo-btn" onclick="window.location.href='/'">
+        Roastd
     </button>
 
     <div class="container">
