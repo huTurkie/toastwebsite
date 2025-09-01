@@ -456,9 +456,8 @@ body {
 }
 
 .shape-star {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 20%;
+    right: 12%;
     color: #ffeb3b;
     font-size: 2rem;
     animation-delay: -1.5s;
