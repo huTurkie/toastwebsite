@@ -878,6 +878,46 @@ body {
     .floating-element {
         transform: scale(0.5);
     }
+    
+    .section {
+        padding-top: 60px;
+        min-height: 100vh;
+    }
+    
+    .main-heading {
+        font-size: clamp(1.8rem, 10vw, 3rem);
+        margin-bottom: 1.5rem;
+    }
+    
+    .cta-button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .games-heading, .inbox-heading {
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
+    }
+    
+    .chat-bubble {
+        font-size: 0.8rem;
+        padding: 0.7rem 1rem;
+        max-width: 150px;
+    }
+    
+    .message-card {
+        width: 120px;
+        padding: 0.8rem;
+        font-size: 0.7rem;
+    }
+    
+    .join-heading {
+        font-size: clamp(1.8rem, 10vw, 3rem);
+    }
+    
+    .qr-container {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 /* Made in France Badge */
