@@ -820,13 +820,13 @@ body {
 }
 
 .card-4 {
-    top: 55%;
+    top: 40%;
     left: 30%;
     animation-delay: -4s;
 }
 
 .card-5 {
-    top: 55%;
+    top: 40%;
     right: 30%;
     animation-delay: -5s;
 }
