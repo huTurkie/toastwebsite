@@ -1557,3 +1557,142 @@ body {
         padding: 8px;
     }
 }
+
+/* Transformation Button Styles */
+.transform-button-container {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 10000;
+}
+
+.transform-button {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #ff4081, #ff6b35);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(255, 64, 129, 0.4);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transform-button:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 12px 35px rgba(255, 64, 129, 0.6);
+}
+
+.transform-button:active {
+    transform: translateY(-1px) scale(1.05);
+}
+
+.transform-dropdown {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    min-width: 280px;
+    max-height: 400px;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.transform-dropdown.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.transform-option {
+    padding: 12px 16px;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.transform-option:hover {
+    background: linear-gradient(45deg, rgba(255, 64, 129, 0.1), rgba(255, 107, 53, 0.1));
+    color: #ff4081;
+    transform: translateX(5px);
+}
+
+.transform-option:last-child {
+    border-bottom: none;
+    border-radius: 0 0 15px 15px;
+}
+
+.transform-option:first-child {
+    border-radius: 15px 15px 0 0;
+}
+
+/* Custom scrollbar for dropdown */
+.transform-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.transform-dropdown::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.transform-dropdown::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ff4081, #ff6b35);
+    border-radius: 3px;
+}
+
+.transform-dropdown::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #e91e63, #f57c00);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .transform-button-container {
+        bottom: 1.5rem;
+        left: 1.5rem;
+    }
+    
+    .transform-button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .transform-dropdown {
+        min-width: 250px;
+        max-height: 300px;
+        bottom: 70px;
+    }
+    
+    .transform-option {
+        padding: 10px 14px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .transform-button-container {
+        bottom: 1rem;
+        left: 1rem;
+    }
+    
+    .transform-dropdown {
+        min-width: 220px;
+        left: 0;
+        right: auto;
+    }
+}

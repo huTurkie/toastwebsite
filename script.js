@@ -217,6 +217,50 @@ function preloadAssets() {
 
 preloadAssets();
 
+// Transformation Button Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const transformButton = document.getElementById('transformButton');
+    const transformDropdown = document.getElementById('transformDropdown');
+    
+    if (transformButton && transformDropdown) {
+        // Toggle dropdown on button click
+        transformButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            transformDropdown.classList.toggle('show');
+        });
+        
+        // Handle option selection
+        const transformOptions = document.querySelectorAll('.transform-option');
+        transformOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                console.log('Selected transformation:', this.textContent);
+                // You can add functionality here to handle the selected option
+                transformDropdown.classList.remove('show');
+                
+                // Add a brief visual feedback
+                this.style.background = 'linear-gradient(45deg, rgba(255, 64, 129, 0.2), rgba(255, 107, 53, 0.2))';
+                setTimeout(() => {
+                    this.style.background = '';
+                }, 300);
+            });
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!transformButton.contains(e.target) && !transformDropdown.contains(e.target)) {
+                transformDropdown.classList.remove('show');
+            }
+        });
+        
+        // Close dropdown on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                transformDropdown.classList.remove('show');
+            }
+        });
+    }
+});
+
 // Add error handling for external resources
 window.addEventListener('error', function(e) {
     if (e.target.tagName === 'LINK') {
