@@ -15,7 +15,7 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #ff4081 0%, #ff6b35 100%);
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -72,11 +72,11 @@
         }
 
         .person-image {
-            width: 200px;
-            height: 250px;
+            width: calc(100% + 50px);
+            height: 200px;
             border-radius: 20px;
             overflow: hidden;
-            margin: 0 auto 25px;
+            margin: 0 -25px 25px -25px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
 
@@ -222,11 +222,11 @@
             </div>
 
             <div class="toast-heading">
-                toast this pic 😂
+                🔥 toast this pic 😂
             </div>
 
             <div class="person-image">
-                <img src="../../attached_assets/generated_images/Young_woman_portrait_photo_192b693c.png" alt="Person to toast" />
+                <img src="../../attached_assets/generated_images/Person_standing_in_street_1394fc03.png" alt="Person to toast" />
             </div>
 
             <div class="input-section">
@@ -242,7 +242,7 @@
         </div>
 
         <div class="stats-text">
-            🔥 274 friends just tapped the button 🔥
+            🔥 <span id="counter">274</span> friends just tapped the button 🔥
         </div>
 
         <button class="get-messages-btn">
@@ -278,6 +278,16 @@
         setInterval(() => {
             personImage.style.transform = `translateY(${Math.sin(Date.now() * 0.001) * 3}px)`;
         }, 16);
+
+        // Counter animation
+        let counter = 274;
+        const counterElement = document.getElementById('counter');
+        
+        setInterval(() => {
+            const increment = Math.random() > 0.5 ? 1 : 2;
+            counter += increment;
+            counterElement.textContent = counter;
+        }, Math.random() * 3000 + 2000); // Random interval between 2-5 seconds
     </script>
 </body>
 </html>
