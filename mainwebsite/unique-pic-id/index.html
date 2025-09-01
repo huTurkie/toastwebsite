@@ -30,19 +30,15 @@
         }
 
         .main-card {
-            background: white;
+            background: transparent;
             border-radius: 25px;
             padding: 30px 25px;
             margin-bottom: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             position: relative;
         }
 
         .profile-section {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
+            display: none;
         }
 
         .profile-avatar {
@@ -69,6 +65,10 @@
             font-weight: 600;
             color: #333;
             margin-bottom: 25px;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 15px;
+            display: inline-block;
         }
 
         .person-image {
@@ -88,6 +88,7 @@
 
         .input-section {
             margin-top: 20px;
+            display: none;
         }
 
         .prompt-input {
@@ -271,13 +272,8 @@
             window.location.href = '/';
         });
 
-        // Add some floating animation to the image
+        // Remove floating animation - keep image stable
         const personImage = document.querySelector('.person-image');
-        let floatDirection = 1;
-        
-        setInterval(() => {
-            personImage.style.transform = `translateY(${Math.sin(Date.now() * 0.001) * 3}px)`;
-        }, 16);
 
         // Counter animation
         let counter = 274;
