@@ -801,33 +801,33 @@ body {
 
 /* Card Positions - Tighter circle around the pictures */
 .card-1 {
-    top: 15%;
-    left: 8%;
+    top: 25%;
+    left: 25%;
     animation-delay: -1s;
 }
 
 .card-2 {
-    top: 8%;
-    left: 40%;
+    top: 18%;
+    left: 50%;
     transform: translateX(-50%);
     animation-delay: -3s;
 }
 
 .card-3 {
-    top: 15%;
-    right: 15%;
+    top: 25%;
+    right: 25%;
     animation-delay: -2s;
 }
 
 .card-4 {
-    top: 50%;
-    left: 15%;
+    top: 55%;
+    left: 30%;
     animation-delay: -4s;
 }
 
 .card-5 {
-    top: 50%;
-    right: 15%;
+    top: 55%;
+    right: 30%;
     animation-delay: -5s;
 }
 
@@ -868,6 +868,82 @@ body {
     top: 10px;
     right: -50px;
     animation-delay: -3s;
+}
+
+/* Inbox Message with Heart */
+.inbox-message {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+.message-envelope {
+    width: 100px;
+    height: 70px;
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+    animation-delay: -2s;
+}
+
+.envelope-body {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #ff4081;
+}
+
+.heart-icon {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    animation: heartbeat 2s ease-in-out infinite;
+}
+
+.message-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 60%;
+}
+
+.line {
+    height: 2px;
+    background: #ddd;
+    border-radius: 1px;
+}
+
+.line.short {
+    width: 70%;
+}
+
+.envelope-flap {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    border-bottom: 30px solid #ff4081;
+    z-index: 10;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 
