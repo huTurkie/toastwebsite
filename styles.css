@@ -1151,26 +1151,26 @@ body {
 /* Left side bubble positions */
 .bubble-l1 {
     top: 25%;
-    left: 12%;
+    left: 18%;
     animation-delay: -1s;
 }
 
 .bubble-l2 {
     bottom: 25%;
-    left: 12%;
+    left: 18%;
     animation-delay: -3s;
 }
 
 /* Right side bubble positions */
 .bubble-r1 {
     top: 25%;
-    right: 18%;
+    right: 12%;
     animation-delay: -2s;
 }
 
 .bubble-r2 {
     bottom: 25%;
-    right: 12%;
+    right: 6%;
     animation-delay: -4s;
 }
 
