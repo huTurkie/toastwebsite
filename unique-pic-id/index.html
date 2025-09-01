@@ -95,6 +95,18 @@
             display: block;
         }
 
+        .rotating-suggestions {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            min-height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s ease;
+        }
+
         .prompt-input {
             width: calc(100% + 50px);
             margin: 0 -25px;
@@ -251,6 +263,10 @@
                     Send
                 </button>
             </div>
+            
+            <div class="rotating-suggestions" id="suggestions">
+                Put them in another country / city 🌍
+            </div>
         </div>
 
         <div class="stats-text">
@@ -295,6 +311,42 @@
             counter += increment;
             counterElement.textContent = counter;
         }, Math.random() * 3000 + 2000); // Random interval between 2-5 seconds
+
+        // Rotating suggestions
+        const suggestions = [
+            "Put them in another country / city 🌍",
+            "Turn them into a superhero 🦸",
+            "Turn them into a villain 😈",
+            "Make them an animal / mythical creature 🐉",
+            "Put them in a movie poster 🎬",
+            "Put them in a famous painting 🖼️",
+            "Make them a celebrity for a day 🌟",
+            "Put them in outer space 🚀",
+            "Put them in a fantasy world 🏰",
+            "Make them a historical figure 👑",
+            "Put them in a sports scene ⚽",
+            "Transform them into a meme character 😂",
+            "Swap their outfit with someone famous 👗",
+            "Make them tiny or giant in a scene 🔍",
+            "Add a magical effect around them ✨",
+            "Turn them into a cartoon character 📺",
+            "Turn them into an anime character 🎌",
+            "Turn them into a robot 🤖",
+            "Turn them into a cyborg 🦾",
+            "Turn them into a Pixar-style character 🎥"
+        ];
+        
+        let currentIndex = 0;
+        const suggestionsElement = document.getElementById('suggestions');
+        
+        setInterval(() => {
+            suggestionsElement.style.opacity = '0';
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % suggestions.length;
+                suggestionsElement.textContent = suggestions[currentIndex];
+                suggestionsElement.style.opacity = '1';
+            }, 150);
+        }, 1000); // Change every 1 second
     </script>
 </body>
 </html>
